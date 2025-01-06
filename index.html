@@ -6,14 +6,12 @@
     <title>Anonmiti Security Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Resetting margin and padding for all elements */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Setting the body and html to occupy 100% height for proper scrolling */
         body, html {
             height: 100%;
             font-family: 'Poppins', sans-serif;
@@ -21,7 +19,6 @@
             overflow-y: auto;
         }
 
-        /* Ensuring the particles background covers the whole screen and remains fixed */
         #particles-js {
             position: fixed;
             top: 0;
@@ -32,7 +29,6 @@
             pointer-events: none;
         }
 
-        /* Styling the main content to make it scrollable */
         .content {
             position: relative;
             text-align: center;
@@ -41,13 +37,6 @@
             padding: 20px;
         }
 
-        /* Styling the main logo */
-        .content img {
-            width: 150px;
-            margin-top: 20px;
-        }
-
-        /* Styling the heading and text */
         .content h1 {
             margin: 20px 0 10px;
             font-size: 48px;
@@ -58,7 +47,6 @@
             font-size: 18px;
         }
 
-        /* Styling the invite button */
         .invite-button {
             display: inline-block;
             margin-top: 20px;
@@ -75,7 +63,6 @@
             background-color: #e0e0e0;
         }
 
-        /* Styling the invite card */
         .invite-card {
             background-color: #1a1a1a;
             border: 1px solid #333;
@@ -84,20 +71,17 @@
             max-width: 400px;
             margin: 20px auto;
             box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-            text-align: left;
             display: flex;
             align-items: center;
-            justify-content: space-between;
             color: white;
             position: relative;
             overflow: hidden;
         }
 
-        /* Styling the invite card image */
         .invite-card img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
             margin-right: 20px;
         }
 
@@ -112,7 +96,6 @@
             color: #aaa;
         }
 
-        /* Styling the Join button inside the invite card */
         .join-button {
             background-color: #28a745;
             color: white;
@@ -123,21 +106,20 @@
             font-weight: bold;
             cursor: pointer;
             text-align: center;
+            margin-left: auto;
         }
 
         .join-button:hover {
             background-color: #218838;
         }
 
-        /* Styling the features section */
         .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 30px;
         }
 
-        /* Styling the feature cards */
         .feature-card {
             background-color: #1a1a1a;
             color: #fff;
@@ -164,7 +146,7 @@
             line-height: 1.5;
         }
 
-        /* Ensuring the body is scrollable on mobile devices */
+        /* Ensure the layout is scrollable on mobile screens */
         @media screen and (max-width: 768px) {
             body {
                 overflow-y: scroll;
@@ -172,6 +154,16 @@
 
             .content h1 {
                 font-size: 36px;
+            }
+
+            .invite-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .join-button {
+                margin-top: 10px;
+                margin-left: 0;
             }
 
             .feature-card {
@@ -187,7 +179,6 @@
 
 <!-- Main Content -->
 <div class="content">
-    <img src="anonmiti.png" alt="Anonmiti Security Logo">
     <h1>Anonmiti Security Bot</h1>
     <p>Protect your Discord server from malicious attacks with ease!</p>
     <a href="https://discord.com/oauth2/authorize?client_id=1325876054400831621&permissions=8&integration_type=0&scope=bot" class="invite-button">Invite the Bot</a>
@@ -195,12 +186,10 @@
 
 <!-- Invite Card Feature -->
 <div class="invite-card">
+    <img src="anonmiti.png" alt="Server Logo">
     <div>
-        <img src="anonmiti.png" alt="Server Logo">
-        <div>
-            <h3>Anonmiti</h3>
-            <p>Join Anonmiti Discord Server</p>
-        </div>
+        <h3>Anonmiti</h3>
+        <p>Join Anonmiti Discord Server</p>
     </div>
     <button class="join-button" onclick="location.href='https://discord.gg/MFAJuGregQ'">Join</button>
 </div>
