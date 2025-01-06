@@ -8,23 +8,21 @@
     <!-- 🖼️ Favicon -->
     <link rel="icon" type="image/png" href="anonmiti.png">
 
-    <!-- 🔥 Open Graph Meta Tags for Social Media Thumbnail -->
+    <!-- ✅ Open Graph Meta Tags (For Discord, Facebook, etc.) -->
     <meta property="og:title" content="Anonmiti Security Bot">
     <meta property="og:description" content="Protect your Discord server from malicious attacks with ease!">
-    <meta property="og:image" content="https://anonmiti.github.io/antinuker/anonmiti.png">
+    <meta property="og:image" content="https://anonmiti.github.io/antinuker/preview-image.png">
     <meta property="og:url" content="https://anonmiti.github.io/antinuker/">
     <meta property="og:type" content="website">
 
-    <!-- 🔥 Twitter Card Meta Tags -->
+    <!-- ✅ Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Anonmiti Security Bot">
     <meta name="twitter:description" content="Protect your Discord server from malicious attacks with ease!">
-    <meta name="twitter:image" content="https://anonmiti.github.io/antinuker/anonmiti.png">
+    <meta name="twitter:image" content="https://anonmiti.github.io/antinuker/preview-image.png">
 
-    <!-- Fonts -->
+    <!-- Fonts and Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS Styling -->
     <style>
         * {
             margin: 0;
@@ -242,47 +240,23 @@
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
     particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 80,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
+        particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: {
+                type: "polygon",
+                polygon: { nb_sides: 6 }
             },
-            "color": {
-                "value": "#ffffff"
-            },
-            "shape": {
-                "type": "polygon",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 6
-                }
-            },
-            "opacity": {
-                "value": 0.5,
-                "random": false
-            },
-            "size": {
-                "value": 3,
-                "random": true
-            },
-            "move": {
-                "enable": true,
-                "speed": 6
-            }
+            opacity: { value: 0.5 },
+            size: { value: 3, random: true },
+            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+            move: { enable: true, speed: 6 }
         },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                }
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" }
             }
         }
     });
