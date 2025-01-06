@@ -3,71 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AntiNuke Bot</title>
+    <title>AntiNuke Bot - Protect Your Discord Server</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1e1e2f;
-            color: #ffffff;
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        h1 {
-            font-size: 50px;
-            margin-top: 40px;
-            color: #ff4f81;
+        header {
+            background-color: #4b79a1;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
-        p {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #b0b0b0;
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .features {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #2c2f48;
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .features h2 {
-            color: #ff4f81;
-        }
-        .invite-btn {
-            display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             margin-top: 30px;
-            padding: 15px 30px;
-            font-size: 20px;
-            font-weight: bold;
-            background-color: #ff4f81;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
         }
-        .invite-btn:hover {
-            background-color: #e63e6e;
+        .feature {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+        }
+        .feature h3 {
+            color: #4b79a1;
+            margin-bottom: 10px;
+        }
+        .invite-button {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #4b79a1;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .invite-button:hover {
+            background-color: #3a607c;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
+
+<header>
     <h1>AntiNuke Bot</h1>
-    <p>Protect your server from nukes and attacks with just one click.</p>
-    
+    <p>Protect your Discord server from malicious attacks with ease!</p>
+</header>
+
+<div class="container">
+    <a href="https://discord.com/api/oauth2/authorize?client_id=1325830867666600038&permissions=8&scope=bot" class="invite-button">Invite the Bot</a>
+
+    <h2>Features</h2>
     <div class="features">
-        <h2>Why Choose AntiNuke Bot?</h2>
-        <ul>
-            <li>✅ **Automatic Protection**: No need to configure anything! Just add the bot and it works right away.</li>
-            <li>✅ **Instant Detection**: It monitors your server for malicious activities in real-time.</li>
-            <li>✅ **Zero Configuration**: No setup required. Invite the bot and let it handle everything.</li>
-            <li>✅ **24/7 Uptime**: Always online to keep your server safe.</li>
-        </ul>
+        <div class="feature">
+            <h3>Automatic Protection</h3>
+            <p>AntiNuke Bot automatically detects and prevents malicious activities in your server.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Monitoring</h3>
+            <p>Your server is protected around the clock with real-time monitoring.</p>
+        </div>
+        <div class="feature">
+            <h3>Easy to Use</h3>
+            <p>Simply add the bot to your server and see the magic happen. No setup required!</p>
+        </div>
     </div>
+</div>
 
-    <a href="https://discord.com/api/oauth2/authorize?client_id=1325830867666600038&permissions=8&scope=bot" class="invite-btn">Invite the Bot</a>
+<footer>
+    <p>© 2025 AntiNuke Bot. All Rights Reserved.</p>
+</footer>
 
-    <p style="margin-top: 50px; font-size: 14px; color: #7d7d7d;">Made with ❤️ by AntiNuke Team</p>
 </body>
 </html>
