@@ -12,38 +12,48 @@
             height: 100%;
             overflow: hidden;
             font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: white;
         }
+
         #particles-js {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: #4b79a1;
         }
+
         .content {
             position: relative;
             text-align: center;
-            color: white;
             z-index: 1;
         }
-        .content h1 {
-            margin: 0;
-            font-size: 48px;
+
+        .content img {
+            width: 200px;
+            margin-top: 20px;
         }
+
+        .content h1 {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
         .content p {
-            margin: 10px 0;
             font-size: 18px;
         }
+
         .invite-button {
             display: inline-block;
             margin-top: 20px;
             padding: 15px 30px;
             background-color: #ffffff;
-            color: #4b79a1;
+            color: #000;
             border-radius: 8px;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
         }
+
         .invite-button:hover {
             background-color: #e0e0e0;
         }
@@ -54,6 +64,7 @@
 <div id="particles-js"></div>
 
 <div class="content">
+    <img src="aromax.png" alt="AntiNuke Bot Logo">
     <h1>AntiNuke Bot</h1>
     <p>Protect your Discord server from malicious attacks with ease!</p>
     <a href="https://discord.com/api/oauth2/authorize?client_id=1325830867666600038&permissions=8&scope=bot" class="invite-button">Invite the Bot</a>
@@ -64,7 +75,7 @@
     particlesJS("particles-js", {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 120,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -74,13 +85,10 @@
                 "value": "#ffffff"
             },
             "shape": {
-                "type": "polygon",
+                "type": "circle",
                 "stroke": {
                     "width": 0,
                     "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 6
                 }
             },
             "opacity": {
@@ -112,7 +120,7 @@
             },
             "move": {
                 "enable": true,
-                "speed": 6,
+                "speed": 4,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -130,7 +138,7 @@
             "events": {
                 "onhover": {
                     "enable": true,
-                    "mode": "grab"
+                    "mode": "repulse"
                 },
                 "onclick": {
                     "enable": true,
@@ -140,7 +148,7 @@
             },
             "modes": {
                 "grab": {
-                    "distance": 140,
+                    "distance": 400,
                     "line_linked": {
                         "opacity": 1
                     }
