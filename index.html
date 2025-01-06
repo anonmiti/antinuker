@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AntiNuke Bot - Protect Your Discord Server</title>
+    <title>Anonmiti Security Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -13,49 +14,71 @@
             overflow: hidden;
             font-family: 'Poppins', sans-serif;
             background-color: #000;
-            color: white;
         }
-
         #particles-js {
             position: absolute;
             width: 100%;
             height: 100%;
         }
-
         .content {
             position: relative;
             text-align: center;
+            color: white;
             z-index: 1;
         }
-
         .content img {
-            width: 200px;
+            width: 150px;
             margin-top: 20px;
         }
-
         .content h1 {
+            margin: 20px 0 10px;
             font-size: 48px;
-            margin: 20px 0;
         }
-
         .content p {
+            margin: 10px 0;
             font-size: 18px;
         }
-
         .invite-button {
             display: inline-block;
             margin-top: 20px;
             padding: 15px 30px;
             background-color: #ffffff;
-            color: #000;
+            color: #4b79a1;
             border-radius: 8px;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
         }
-
         .invite-button:hover {
             background-color: #e0e0e0;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .feature-card {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        .feature-card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .feature-card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .feature-card p {
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -64,10 +87,33 @@
 <div id="particles-js"></div>
 
 <div class="content">
-    <img src="aromax.png" alt="AntiNuke Bot Logo">
-    <h1>AntiNuke Bot</h1>
+    <img src="anonmiti.png" alt="Anonmiti Security Logo">
+    <h1>Anonmiti Security Bot</h1>
     <p>Protect your Discord server from malicious attacks with ease!</p>
     <a href="https://discord.com/api/oauth2/authorize?client_id=1325830867666600038&permissions=8&scope=bot" class="invite-button">Invite the Bot</a>
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Powerful Moderation</h2>
+        <p>Ensure your server is secure with advanced moderation features and zero required permissions.</p>
+    </div>
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Anti Nuke</h2>
+        <p>Prevent nuking attacks and keep your server safe with customizable protection measures.</p>
+    </div>
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Anti Raid</h2>
+        <p>Protect your server from bot raids and unauthorized entries with real-time protection.</p>
+    </div>
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Recovery System</h2>
+        <p>Quickly recover your server settings and roles in case of any unauthorized changes.</p>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -75,7 +121,7 @@
     particlesJS("particles-js", {
         "particles": {
             "number": {
-                "value": 120,
+                "value": 80,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -85,10 +131,13 @@
                 "value": "#ffffff"
             },
             "shape": {
-                "type": "circle",
+                "type": "polygon",
                 "stroke": {
                     "width": 0,
                     "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 6
                 }
             },
             "opacity": {
@@ -120,7 +169,7 @@
             },
             "move": {
                 "enable": true,
-                "speed": 4,
+                "speed": 6,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -138,7 +187,7 @@
             "events": {
                 "onhover": {
                     "enable": true,
-                    "mode": "repulse"
+                    "mode": "grab"
                 },
                 "onclick": {
                     "enable": true,
@@ -148,7 +197,7 @@
             },
             "modes": {
                 "grab": {
-                    "distance": 400,
+                    "distance": 140,
                     "line_linked": {
                         "opacity": 1
                     }
