@@ -45,6 +45,22 @@
             font-size: 18px;
         }
 
+        .invite-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ffffff;
+            color: #4b79a1;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .invite-button:hover {
+            background-color: #e0e0e0;
+        }
+
         .invite-card {
             background-color: #1a1a1a;
             border: 1px solid #333;
@@ -77,7 +93,7 @@
             color: #aaa;
         }
 
-        .invite-button {
+        .join-button {
             background-color: #5865F2;
             color: white;
             padding: 10px 20px;
@@ -89,8 +105,41 @@
             display: inline-block;
         }
 
-        .invite-button:hover {
+        .join-button:hover {
             background-color: #4e5dc6;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .feature-card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -98,16 +147,6 @@
 
 <!-- Particles Background -->
 <div id="particles-js"></div>
-
-<!-- Invite Card Feature -->
-<div class="invite-card">
-    <img src="anonmiti.png" alt="Server Logo">
-    <div>
-        <h3>Anonmiti</h3>
-        <p># 📚 Welcome</p>
-    </div>
-    <a href="https://discord.gg/MFAJuGregQ" class="invite-button">Join</a>
-</div>
 
 <!-- Main Content -->
 <div class="content">
@@ -117,6 +156,41 @@
     <a href="https://discord.com/oauth2/authorize?client_id=1325876054400831621&permissions=8&integration_type=0&scope=bot" class="invite-button">Invite the Bot</a>
 </div>
 
+<!-- Invite Card Feature -->
+<div class="invite-card">
+    <img src="anonmiti.png" alt="Server Logo">
+    <div>
+        <h3>Anonmiti</h3>
+        <p># 📚 Welcome</p>
+    </div>
+    <a href="https://discord.gg/MFAJuGregQ" class="join-button">Join</a>
+</div>
+
+<!-- Features Section -->
+<div class="features">
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Powerful Moderation</h2>
+        <p>Ensure your server is secure with advanced moderation features and zero required permissions.</p>
+    </div>
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Anti Nuke</h2>
+        <p>Prevent nuking attacks and keep your server safe with customizable protection measures.</p>
+    </div>
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Anti Raid</h2>
+        <p>Protect your server from bot raids and unauthorized entries with real-time protection.</p>
+    </div>
+    <div class="feature-card">
+        <img src="anonmiti.png" alt="Feature Icon">
+        <h2>Recovery System</h2>
+        <p>Quickly recover your server settings and roles in case of any unauthorized changes.</p>
+    </div>
+</div>
+
+<!-- Particles.js Script -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
     particlesJS("particles-js", {
