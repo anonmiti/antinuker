@@ -6,22 +6,33 @@
     <title>Anonmiti Security Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body, html {
+        /* Resetting margin and padding for all elements */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting the body and html to occupy 100% height for proper scrolling */
+        body, html {
             height: 100%;
             font-family: 'Poppins', sans-serif;
             background-color: #000;
             overflow-y: auto;
         }
 
+        /* Ensuring the particles background covers the whole screen and remains fixed */
         #particles-js {
             position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             z-index: 0;
+            pointer-events: none;
         }
 
+        /* Styling the main content to make it scrollable */
         .content {
             position: relative;
             text-align: center;
@@ -30,11 +41,13 @@
             padding: 20px;
         }
 
+        /* Styling the main logo */
         .content img {
             width: 150px;
             margin-top: 20px;
         }
 
+        /* Styling the heading and text */
         .content h1 {
             margin: 20px 0 10px;
             font-size: 48px;
@@ -45,6 +58,7 @@
             font-size: 18px;
         }
 
+        /* Styling the invite button */
         .invite-button {
             display: inline-block;
             margin-top: 20px;
@@ -61,6 +75,7 @@
             background-color: #e0e0e0;
         }
 
+        /* Styling the invite card */
         .invite-card {
             background-color: #1a1a1a;
             border: 1px solid #333;
@@ -78,6 +93,7 @@
             overflow: hidden;
         }
 
+        /* Styling the invite card image */
         .invite-card img {
             width: 50px;
             height: 50px;
@@ -96,6 +112,7 @@
             color: #aaa;
         }
 
+        /* Styling the Join button inside the invite card */
         .join-button {
             background-color: #28a745;
             color: white;
@@ -112,6 +129,7 @@
             background-color: #218838;
         }
 
+        /* Styling the features section */
         .features {
             display: flex;
             flex-wrap: wrap;
@@ -119,6 +137,7 @@
             margin-top: 50px;
         }
 
+        /* Styling the feature cards */
         .feature-card {
             background-color: #1a1a1a;
             color: #fff;
@@ -143,6 +162,21 @@
         .feature-card p {
             font-size: 16px;
             line-height: 1.5;
+        }
+
+        /* Ensuring the body is scrollable on mobile devices */
+        @media screen and (max-width: 768px) {
+            body {
+                overflow-y: scroll;
+            }
+
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .feature-card {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -261,47 +295,7 @@
                     "rotateY": 1200
                 }
             }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 140,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
+        }
     });
 </script>
 
