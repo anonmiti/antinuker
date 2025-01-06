@@ -72,9 +72,9 @@
             text-align: left;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             color: white;
             position: relative;
-            cursor: pointer;
             overflow: hidden;
         }
 
@@ -96,33 +96,15 @@
             color: #aaa;
         }
 
-        .invite-card::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(88, 101, 242, 0.1);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .invite-card:hover::after {
-            opacity: 1;
-        }
-
-        /* Green Join Button */
         .join-button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 15px 30px;
             background-color: #28a745;
             color: white;
+            border: none;
             border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
+            padding: 10px 20px;
+            font-size: 16px;
             font-weight: bold;
+            cursor: pointer;
             text-align: center;
         }
 
@@ -178,16 +160,16 @@
 </div>
 
 <!-- Invite Card Feature -->
-<div class="invite-card" onclick="location.href='https://discord.gg/MFAJuGregQ'">
-    <img src="anonmiti.png" alt="Server Logo">
+<div class="invite-card">
     <div>
-        <h3>Anonmiti</h3>
-        <p>Join Anonmiti Discord Server</p>
+        <img src="anonmiti.png" alt="Server Logo">
+        <div>
+            <h3>Anonmiti</h3>
+            <p>Join Anonmiti Discord Server</p>
+        </div>
     </div>
+    <button class="join-button" onclick="location.href='https://discord.gg/MFAJuGregQ'">Join</button>
 </div>
-
-<!-- Green Join Button -->
-<a href="https://discord.gg/MFAJuGregQ" class="join-button">Join</a>
 
 <!-- Features Section -->
 <div class="features">
